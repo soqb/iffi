@@ -1,0 +1,14 @@
+[package]
+name = "iffi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror-no-std = "2"
+derive_deref = "1"
+iffi-macro = { path = "iffi-macro" }
+transmute = "0.1" # oh no!
+
+[features]
+default = ["alloc"]
+alloc = []
