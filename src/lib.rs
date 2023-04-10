@@ -80,7 +80,7 @@ use core::{
     mem::{size_of, size_of_val},
 };
 
-pub use macros::{Iffi, Nicheless};
+pub use iffi_macros::{Iffi, Nicheless};
 
 mod niche;
 pub use niche::*;

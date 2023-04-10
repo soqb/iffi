@@ -1,12 +1,19 @@
 [package]
 name = "iffi"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2021"
+
+[workspace.package]
+description = "Make assertions about values used over FFI"
+license = "MIT OR Apache-2.0"
+keywords = ["ffi"]
+categories = ["api-bindings"]
+repository = "https://github.com/soqb/iffi"
 
 [dependencies]
 thiserror-no-std = "2"
 derive_deref = "1"
-macros = { path = "macros" }
+iffi-macros = { path = "macros", version = "0.0.1"}
 transmute = "0.1" # oh no!
 bytemuck = { version = "1.13", features = ["derive"] }
 concat-arrays = "0.1.2"
