@@ -3,7 +3,6 @@ name = "iffi"
 version = "0.0.1"
 edition = "2021"
 
-[workspace.package]
 description = "Make assertions about values used over FFI"
 license = "MIT OR Apache-2.0"
 keywords = ["ffi"]

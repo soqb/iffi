@@ -3,6 +3,12 @@ name = "iffi-macros"
 version = "0.0.1"
 edition = "2021"
 
+description = "Make assertions about values used over FFI"
+license = "MIT OR Apache-2.0"
+keywords = ["ffi"]
+categories = ["api-bindings"]
+repository = "https://github.com/soqb/iffi"
+
 [lib]
 proc-macro = true
 
