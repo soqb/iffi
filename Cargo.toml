@@ -6,9 +6,17 @@ edition = "2021"
 [dependencies]
 thiserror-no-std = "2"
 derive_deref = "1"
-iffi-macro = { path = "iffi-macro" }
+macros = { path = "macros" }
 transmute = "0.1" # oh no!
+bytemuck = { version = "1.13", features = ["derive"] }
+concat-arrays = "0.1.2"
+smallvec = { version = "1.10.0", optional = true }
 
 [features]
-default = ["alloc"]
-alloc = []
+default = ["std", "atomics"]
+std = ["alloc"]
+alloc = ["dep:smallvec"]
+atomics = []
+
+[workspace]
+members = ["macros"]
