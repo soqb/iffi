@@ -1,6 +1,6 @@
 [package]
 name = "iffi"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2021"
 
 description = "Make assertions about values used over FFI"
